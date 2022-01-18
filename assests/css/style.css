@@ -1,0 +1,33 @@
+*{ margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:"Inter";
+
+}
+.head-title {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    background: linear-gradient(90deg,#e66465, #9198e5);
+    padding: 1em;
+}
+.uvi{
+  color: white;
+  
+  border-radius: 5px;
+  padding: .3em;
+  font-size: 14px;
+}
+.recent{
+    border-top: 2px solid black;
+}
+.weather_image{
+    border-radius: 140px;
+    width: 200px;
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}

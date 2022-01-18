@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="./assests/css/style.css">
+    <link rel="icon" href="https://i.pinimg.com/originals/77/0b/80/770b805d5c99c7931366c2e84e88f251.png">
+    <title>Weather Dashboard</title>
+</head>
+<body>
+    <header>
+        <div class="head-title">
+            <h1>Weather Dashboard</h1>
+        </div>
+    </header>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-3 bg-white">
+                <h5 class="mt-1">Search for a City:</h5>
+                <div class="input-group mb-3">
+                    <input id="city" type="text" class="form-control" placeholder="Enter a city" aria-label="Enter a city">
+                    <div class="input-group-append">
+                        
+                    </div>
+                </div>
+                <button class="btn btn-block btn-primary mb-3" type="button" id="search">Search</button>
+                <div id="recent" class="recent">
+                    
+                </div>
+                <form id="city-recent"></form>
+            </div>
+            <div class="col-lg-9">
+                <div class="row mr-0">
+                    <div class="col-lg-11  m-3" id="today-weather">
+                        <div class="card-body card d-none">
+                            <!-- <h3 id="city-name" class="city-name align-middle"></h3>
+                            <img id="current-pic" alt="">
+                            <p id="temperature"></p>
+                            <p id="humidity"></p>
+                            <p id="wind-speed"></p>
+                            <p id="UV-index"></p> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="row fiveday d-none" id="fiveday-header">
+                    <div class="col-12">
+                        <h3>5-Day Forecast</h3>
+                    </div>
+                </div>
+                <div id="days-container" class="row">
+                    <div id="one"class="col-md-2 show forecast bg-primary text-white m-2 rounded"></div>
+                    <div id="two"class="col-md-2 show forecast bg-primary text-white m-2 rounded"></div>
+                    <div id=three class="col-md-2 show forecast bg-primary text-white m-2 rounded"></div>
+                    <div id="four" class="col-md-2 show forecast bg-primary text-white m-2 rounded"></div>
+                    <div id="five" class="col-md-2 show forecast bg-primary text-white m-2 rounded"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="./assests/js/index.js"></script>
+</body>
+</html>
