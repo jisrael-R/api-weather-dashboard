@@ -123,6 +123,10 @@ function weatherApp(city){
               var tempEl = document.createElement("p");
                tempEl.textContent =`Temp:  ${(response.data.list[daysIndex].main.temp)}`;
                days[i].append(tempEl);
+               
+               var windSpeedEl = document.createElement("p");
+               windSpeedEl.textContent =`Speed:  ${(response.data.list[daysIndex].wind.speed)}MPH`;
+               days[i].append(windSpeedEl);
 
                var humidityEl = document.createElement("p");
                humidityEl.textContent =`Humidity: ${(response.data.list[daysIndex].main.humidity)}%`;
