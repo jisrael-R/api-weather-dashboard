@@ -9,3 +9,9 @@
 ## Deploy
 
  [Cheack Project Here](https://jisrael-r.github.io/api-weather-dashboard/)
+ 
+ ## App
+ 
+  ![image](/../main/assests/img/1.png)
+  
+  ![image](/../main/assests/img/2.png)
