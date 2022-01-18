@@ -146,7 +146,7 @@ function searchFunc(){
         const btnItem = document.createElement("input");
         btnItem.setAttribute('type', 'text');
         btnItem.setAttribute('readonly', true);
-        btnItem.setAttribute('class', 'form-control d-block text-center mt-2 bg-warning');
+        btnItem.setAttribute('class', 'form-control d-block text-center pointer mt-2 bg-warning');
         btnItem.setAttribute('value', searchRecent[i]);
         btnItem.addEventListener('click', function(){
             const citi = btnItem.value 
